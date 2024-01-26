@@ -34,11 +34,11 @@ describe("Plotly - Interview test cases", () => {
       .should("be.visible")
       .parent("div.grow")
       .invoke("text")
-      .then((weeklyDownloads) => {
+      .then((_weeklyDownloads) => {
         // Log the weekly downloads value.
-        cy.log(weeklyDownloads);
+        cy.log(_weeklyDownloads);
         // Verifies if the weekly downloads visible on screen.
-        cy.contains(weeklyDownloads).should("be.visible");
+        cy.contains(_weeklyDownloads).should("be.visible");
       });
   });
 
